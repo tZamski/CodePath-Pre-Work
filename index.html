@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Color Matching!</h1>
+
+    <p>
+    Welcome to the game. Click start to begin!
+    </p>
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+    <input type="text" id="timer" class="hidden">
+    <div id="gameButtonArea">
+      <button id="button1" onmousedown="startTone(1)" onclick="guess(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onmousedown="startTone(2)" onclick="guess(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onmousedown="startTone(3)" onclick="guess(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onmousedown="startTone(4)" onclick="guess(4)" onmouseup="stopTone()"></button>
+      <button id="button5" onmousedown="startTone(5)" onclick="guess(5)" onmouseup="stopTone()"></button>
+      <button id="button6" onmousedown="startTone(6)" onclick="guess(6)" onmouseup="stopTone()"></button>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
